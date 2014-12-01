@@ -1,0 +1,29 @@
+html,
+body,
+.application-root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.layout {
+  height: 100%;
+  overflow: auto;
+}
+
+.application-main {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: $navbar-width;
+  right: 0;
+  background-color: white;
+  z-index: 11;
+  overflow: auto;
+}
+
+.application-main-inner {
+  padding: 1em;
+}

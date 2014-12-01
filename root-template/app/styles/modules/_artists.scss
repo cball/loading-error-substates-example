@@ -1,0 +1,17 @@
+#artists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .artist {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+
+    img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+}

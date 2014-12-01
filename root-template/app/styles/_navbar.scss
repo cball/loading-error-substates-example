@@ -1,0 +1,23 @@
+$navbar-transition-timing: .3s;
+$navbar-meta-row-height: 1.4em;
+$navbar-app-row-height: 4.5em;
+$navbar-text-color: mix($brand-primary, white, 15);
+
+
+.navbar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: $navbar-width;
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  background-color: $navbar-default-bg;
+  z-index: 100;
+  @include transition(all $easing $navbar-transition-timing);
+}
+
+.navbar-inner {
+  padding: 1em;
+}

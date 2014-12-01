@@ -1,3 +1,15 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="layout">
+  <header class="navbar">
+    <div class="navbar-inner">
+      <ul class="nav nav-pills">
+        <li>{{#link-to 'index'}}Artists{{/link-to}}</li>
+        <li>{{#link-to 'index'}}Bad link to artist{{/link-to}}</li>
+      </ul>
+    </div>
+  </header>
+  <main class="application-main">
+    <div class="application-main-inner">
+      {{outlet}}
+    </div>
+  </main>
+</div>

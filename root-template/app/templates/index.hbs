@@ -1,0 +1,10 @@
+<h1>Artists</h1>
+
+<ul id="artists">
+  {{#each artist in model}}
+    {{#link-to 'artist' artist tagName="li" classNames="artist"}}
+      <img {{bind-attr src="artist.image"}} />
+      <h5>{{artist.name}}</h5>
+    {{/link-to}}
+  {{/each}}
+</ul>
