@@ -1,9 +1,9 @@
-#artists {
+#artists, #albums {
   margin: 0;
   padding: 0;
   list-style: none;
 
-  .artist {
+  .album-list {
     text-align: center;
     display: inline-block;
     margin: 10px 20px;
@@ -13,5 +13,11 @@
       max-width: 150px;
       max-height: 150px;
     }
+  }
+}
+
+.artist-page {
+  img {
+    max-height: 250px;
   }
 }

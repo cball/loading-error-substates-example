@@ -6,8 +6,14 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('artist', { path: 'artist/:artist_id' }, function() {
-    this.resource('album', { path: 'albums/:album_id' }, function() { });
+  this.resource('artist', { path: '/artists/:artist_id' }, function() {
+  });
+  this.resource('albums', { path: '/artists/:artist_id/albums' }, function() {
+    this.route('popular');
+  });
+  this.resource('album', { path: '/albums/:album_id' }, function() {
+    this.resource('comments', function() { });
+    this.resource('reviews', function() { });
   });
 });
 

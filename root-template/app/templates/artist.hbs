@@ -1,2 +1,8 @@
-<h2>{{name}}</h2>
-{{outlet}}
+<div class="artist-page artist">
+  <img {{bind-attr src="image"}} />
+  <h2>{{name}}</h2>
+  <p>{{bio}}</p>
+
+  {{#link-to 'albums' id}}All Albums{{/link-to}}
+
+</div>

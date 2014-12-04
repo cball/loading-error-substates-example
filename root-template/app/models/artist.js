@@ -2,5 +2,8 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
-  image: DS.attr('string')
+  image: DS.attr('string'),
+  bio: DS.attr('string'),
+
+  albums: DS.hasMany('album', { async: true })
 });

@@ -1,1 +1,14 @@
+<div class="artist-page artist">
+  <img {{bind-attr src="image"}} />
+  <h2>{{name}}</h2>
+  <h4>by {{artist.name}}</h4>
+
+  <p>pretend we have songs.</p>
+
+  <ul id="comments" class="nav nav-pills">
+    <li>{{#link-to 'comments'}}Comments{{/link-to}}</li>
+    <li>{{#link-to 'reviews'}}Reviews{{/link-to}}</li>
+  <ul>
+</div>
+
 {{outlet}}

@@ -1,0 +1,10 @@
+<h2>Albums by {{model.name}}</h2>
+
+<ul id="albums">
+  {{#each album in albums}}
+    {{#link-to 'album' album.id tagName="li" classNames="artist album-list"}}
+      <img {{bind-attr src="album.image"}} />
+      <h5>{{album.name}}</h5>
+    {{/link-to}}
+  {{/each}}
+</ul>

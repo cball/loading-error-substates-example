@@ -1,0 +1,26 @@
+.loader {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+
+  svg {
+    width: 150px;
+    height: 50px;
+  }
+
+  svg path,
+  svg rect{
+    fill: #999;
+  }
+}
+
+#bar {
+  span {
+      -moz-animation: progress 2s ease-out;
+    -webkit-animation: progress 2s ease-out;
+  }
+}
+
+@-moz-keyframes progress {
+
+}
